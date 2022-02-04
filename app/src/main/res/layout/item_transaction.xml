@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_regular"
+    android:background="@drawable/bg_rounded_border_light_orange"
+    android:padding="@dimen/margin_regular">
+
+    <TextView
+        android:id="@+id/transactionAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/transactionAmountColor"
+        android:textSize="@dimen/txt_regular"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Amount: $3,087.95 (credit)" />
+
+    <TextView
+        android:id="@+id/transactionHVT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_hvt"
+        android:textColor="@color/colorImportant"
+        android:textSize="@dimen/txt_small"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/transactionFlag"
+        app:layout_constraintEnd_toStartOf="@+id/transactionFlag"
+        app:layout_constraintTop_toTopOf="@+id/transactionFlag" />
+
+    <TextView
+        android:id="@+id/transactionTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/txt_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactionAmount"
+        tools:text="23:32:54 March-19" />
+
+    <TextView
+        android:id="@+id/transactionRemarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/txt_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactionTimestamp"
+        tools:text="Promotional offer cashback for credit card ending with 4367" />
+
+    <ImageView
+        android:id="@+id/transactionFlag"
+        android:layout_width="@dimen/box_small"
+        android:layout_height="@dimen/box_small"
+        android:contentDescription="@string/cd_transaction_flag"
+        android:padding="8dp"
+        android:src="@drawable/ic_flag_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

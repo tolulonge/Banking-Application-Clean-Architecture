@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Margin Related-->
+    <dimen name="margin_very_small">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_regular">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!--Box Related-->
+    <dimen name="box_very_small">30dp</dimen>
+    <dimen name="box_small">50dp</dimen>
+    <dimen name="box_regular">60dp</dimen>
+    <dimen name="box_medium">80dp</dimen>
+    <dimen name="box_large">100dp</dimen>
+
+    <!--Text Related-->
+    <dimen name="txt_very_small">8sp</dimen>
+    <dimen name="txt_small">12sp</dimen>
+    <dimen name="txt_regular">16sp</dimen>
+    <dimen name="txt_medium">20sp</dimen>
+    <dimen name="txt_large">24sp</dimen>
+    <dimen name="txt_x_large">32sp</dimen>
+</resources>
