@@ -17,3 +17,7 @@ It consists of 6 layers each represented as modules;
   - DataSource Layer(Remote): fulfills contract set forth by the dataLayer, contains api definitions, mappers
   
   
+![banking_acct_info_screen](https://user-images.githubusercontent.com/40584796/152590553-4b1f73bd-74fa-44ef-89c2-1463cd803919.jpeg)
+![banking_transaction_screen](https://user-images.githubusercontent.com/40584796/152590565-0c601ca2-4334-419b-bd8d-06e5b347bf39.jpeg)
+
+Credits: Adapting CLEAN Architecture in Android Apps by Kaushal Dhruw- PluralSight
